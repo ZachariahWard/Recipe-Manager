@@ -7,13 +7,43 @@ export default function Home() {
     <main>
       <h1 className="text-3xl font-bold underline">Recipe Manager</h1>
       <p>Manage your recipes!</p>
-      <Tile
-        name="Veggie Salad"
-        description="This is a description of a recipe"
-        prepTime={10}
-        cookTime={20}
-        link="/taco-salad"
-      />
+      <div className="flex">
+        <Tile
+          name="Veggie Salad"
+          description="This is a description of a recipe that should wrap at some point."
+          prepTime={10}
+          cookTime={20}
+          link="/taco-salad"
+        />
+        <Tile
+          name="Veggie Salad"
+          description="This is a description of a recipe that should wrap at some point."
+          prepTime={10}
+          cookTime={20}
+          link="/taco-salad"
+        />
+        <Tile
+          name="Veggie Salad"
+          description="This is a description of a recipe that should wrap at some point."
+          prepTime={10}
+          cookTime={20}
+          link="/taco-salad"
+        />
+        <Tile
+          name="Veggie Salad"
+          description="This is a description of a recipe that should wrap at some point."
+          prepTime={10}
+          cookTime={20}
+          link="/taco-salad"
+        />
+        <Tile
+          name="Veggie Salad"
+          description="This is a description of a recipe that should wrap at some point."
+          prepTime={10}
+          cookTime={20}
+          link="/taco-salad"
+        />
+      </div>
     </main>
   );
 }
