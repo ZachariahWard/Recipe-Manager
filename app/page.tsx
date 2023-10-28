@@ -1,5 +1,4 @@
-import Recipe from "@/components/Recipe";
-import Link from "next/link";
+import Tile from "../components/Tile";
 
 export default function Home() {
   const recipeName = "Steak";
@@ -8,7 +7,13 @@ export default function Home() {
     <main>
       <h1 className="text-3xl font-bold underline">Recipe Manager</h1>
       <p>Manage your recipes!</p>
-      <Link href="/taco-salad">Taco Salad</Link>
+      <Tile
+        name="Veggie Salad"
+        description="This is a description of a recipe"
+        prepTime={10}
+        cookTime={20}
+        link="/taco-salad"
+      />
     </main>
   );
 }

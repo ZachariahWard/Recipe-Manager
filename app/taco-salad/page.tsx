@@ -1,5 +1,5 @@
 import Recipe from "@/components/Recipe";
-import { sectionHeaders } from "@/components/Recipe";
+import RecipeProps from "@/components/Recipe";
 
 export default function Home() {
   const recipeName = "Veggie Salad";
@@ -15,7 +15,7 @@ export default function Home() {
             { name: "peach", amount: 10, unit: "count" },
             { name: "junior", amount: 6, unit: "oz" },
           ],
-          header: sectionHeaders.prep,
+          header: "prep",
           order: 1,
           description: "this is a description",
         },
@@ -33,16 +33,36 @@ export default function Home() {
               unit: "Wow such a unit!",
             },
           ],
-          header: sectionHeaders.cook,
+          header: "cook",
           order: 2,
           description:
-            "this is another description that is much longer than the first one and will wrap to the next line.",
+            "this is another description that is much longer than the first one and will wrap to the next line as long as I repeat it a few times. this is another description that is much longer than the first one and will wrap to the next line as long as I repeat it a few times. this is another description that is much longer than the first one and will wrap to the next line as long as I repeat it a few times. this is another description that is much longer than the first one and will wrap to the next line as long as I repeat it a few times.",
         },
         {
           ingredients: [],
-          header: sectionHeaders.serve,
+          header: "serve",
           order: 3,
           description: "eat!",
+        },
+      ]}
+      subRecipeProps={[
+        {
+          name: "subRecipeName1",
+          servings: 1,
+          sections: [],
+          subRecipeProps: [],
+        },
+        {
+          name: "subRecipeName2",
+          servings: 2,
+          sections: [],
+          subRecipeProps: [],
+        },
+        {
+          name: "subRecipeName3",
+          servings: 3,
+          sections: [],
+          subRecipeProps: [],
         },
       ]}
     />
