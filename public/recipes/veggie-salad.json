@@ -1,0 +1,60 @@
+{
+  "name": "Veggie Salad",
+  "servings": 4,
+  "sections": [
+    {
+      "ingredients": [
+        { "name": "larry", "amount": 3, "unit": "tbsp" },
+        { "name": "peach", "amount": 10, "unit": "count" },
+        { "name": "junior", "amount": 6, "unit": "oz" }
+      ],
+      "header": "prep",
+      "order": 1,
+      "description": "this is a description"
+    },
+    {
+      "ingredients": [
+        { "name": "bob", "amount": 2, "unit": "cups" },
+        {
+          "name": "This is a really descriptive ingredient",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "This is a really descriptive ingredient with a unit!",
+          "amount": 10000,
+          "unit": "Wow such a unit!"
+        }
+      ],
+      "header": "cook",
+      "order": 2,
+      "description": "this is another description that is much longer than the first one and will wrap to the next line as long as I repeat it a few times. this is another description that is much longer than the first one and will wrap to the next line as long as I repeat it a few times. this is another description that is much longer than the first one and will wrap to the next line as long as I repeat it a few times. this is another description that is much longer than the first one and will wrap to the next line as long as I repeat it a few times."
+    },
+    {
+      "ingredients": [],
+      "header": "serve",
+      "order": 3,
+      "description": "eat!"
+    }
+  ],
+  "subRecipeProps": [
+    {
+      "name": "subRecipeName1",
+      "servings": 1,
+      "sections": [],
+      "subRecipeProps": []
+    },
+    {
+      "name": "subRecipeName2",
+      "servings": 2,
+      "sections": [],
+      "subRecipeProps": []
+    },
+    {
+      "name": "subRecipeName3",
+      "servings": 3,
+      "sections": [],
+      "subRecipeProps": []
+    }
+  ]
+}
